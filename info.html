@@ -1,127 +1,97 @@
 <!DOCTYPE html>
-
-<html lang="zh-CN">
+<html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>TIFA AI - 在线试用</title>
-<link href="css\try.css" rel="stylesheet"/>
-<link href="css\dev.css" rel="stylesheet"/>
-<link href="css\info.css" rel="stylesheet"/>
-<script src="..\..\unpkg.com\vue@3\dist\vue.global.js"></script>
-<script src="..\..\unpkg.com\axios\dist\axios.min.js"></script>
-<link href="..\..\cdnjs.cloudflare.com\ajax\libs\prism\1.24.1\themes\prism-tomorrow.min.css" rel="stylesheet"/>
+<title>TIFA AI - About Us</title>
+<link href="css/try.css" rel="stylesheet"/>
+<link href="css/info.css" rel="stylesheet"/>
+<script src="https://cdn.staticfile.net/translate.js/3.5.1/translate.js"></script>
+<script>
+translate.language.setLocal('english'); // Set the local language (current page's language). If not set, it will automatically detect the language of the text displayed on the current page. You can specify languages like 'english', 'chinese_simplified', etc. See the documentation below for more details.
+translate.service.use('client.edge'); // Set the machine translation service channel, directly using the client itself, not relying on the server. For related instructions, refer to http://translate.zvo.cn/43086.html
+translate.execute(); // Perform translation
+</script>
 </head>
 <body>
-<!-- 导航栏 - 修改后的结构 -->
+<!-- Navigation Bar - Modified Structure -->
 <nav class="navbar">
 <div class="left-section">
-<img alt="Logo" class="logo" src="img\logo.png"/>
+<img alt="Logo" class="logo" src="img/logo.png"/>
 </div>
 <div class="right-section-main">
 <div class="right-section">
     <div class="nav-links" style="padding: 1rem 0;">
-        <a class="nav-link" href="index.html">◇主页</a>
-        <a class="nav-link" href="Dev.html">◇开发文档</a>
-        <a class="nav-link" href="info.html">◇关于我们</a>
-        <a class="nav-link" href="open.html">◇共享</a>
+        <a class="nav-link" href="index.html">◇Home</a>
+        <a class="nav-link" href="Dev.html">◇Development Documentation</a>
+        <a class="nav-link" href="info.html">◇About Us</a>
+        <a class="nav-link" href="open.html">◇Share</a>
         </div>
 </div>
 </div>
 
 </nav>
-<section class="doc-section" id="about-us">
-<h2>关于我们</h2>
-<div class="about-content">
-<div class="company-intro card">
-<div class="card-icon">🏢</div>
-<h4>公司简介</h4>
-<p>我们是一家成立于2024年的创新型人工智能企业，我们致力于推动AI技术创新，助力数字经济发展。</p>
+<div class="info-content">
+<div class="info-header">
+<h2>About Us</h2>
+<p>Who are we?</p>
 </div>
-<div class="model-intro card">
-<div class="card-icon">🤖</div>
-<h4>TIFA大模型</h4>
-<p>TIFA大模型系列是由LEFTNORTH团队自主研发的尖端AI系统。通过采用先进的少样本学习技术和创新的提示工程方法，我们的模型在角色扮演和交互式叙事方面达到了突破性的成就。</p>
-<div class="tech-highlights">
-<div class="highlight-item">
-<span class="highlight-number">220B</span>
-<span class="highlight-text">参数规模</span>
+<div class="info-section">
+<h3>Company Introduction</h3>
+<p>TIFA AI is an innovative company focused on artificial intelligence technology. We are committed to providing efficient, intelligent solutions through advanced natural language processing technology, helping businesses and individuals achieve more efficient communication and work.</p>
 </div>
-<div class="highlight-item">
-<span class="highlight-number">Top 4</span>
-<span class="highlight-text">全球排名</span>
+<div class="info-section">
+<h3>Our Mission</h3>
+<p>Our mission is to promote seamless communication between humans and machines through AI technology, enhance productivity, and enrich life experiences. We believe that AI is not just technology, but a bridge connecting human wisdom with machine capabilities.</p>
 </div>
-<div class="highlight-item">
-<span class="highlight-number">98%</span>
-<span class="highlight-text">用户满意度</span>
-</div>
-</div>
-</div>
-<div class="vision-mission card">
-<div class="card-icon">🎯</div>
-<h4>愿景使命</h4>
-<p>我们致力于打造世界级的人工智能技术，推动中国AI产业的创新发展。通过持续的技术突破和产品创新，我们期望为数字经济发展贡献力量，实现科技赋能产业升级的美好愿景。</p>
-</div>
-<div class="join-us card">
-<div class="card-icon">🤝</div>
-<h4>加入我们</h4>
-<p class="join-intro">我们正在寻找优秀的人才加入LEFTNORTH团队，一起探索AI的无限可能！</p>
-<div class="positions">
-<div class="position-item">
-<h5>AI研究科学家</h5>
-<p class="salary">薪资：50-100W/年</p>
-<ul class="requirements">
-<li>计算机科学、人工智能等相关专业博士学位</li>
-<li>在顶级会议发表过论文</li>
-<li>有大语言模型研发经验优先</li>
+<div class="info-section">
+<h3>Team</h3>
+<p>Our team consists of top AI researchers, software engineers, and designers from around the world. Our common goal is to create an AI system that can understand human language, emotions, and intentions.</p>
+<ul>
+<li><strong>Founder:</strong> Zhang San - A pioneer in the AI field with extensive industry experience.</li>
+<li><strong>Chief Scientist:</strong> Li Si - An expert in natural language processing, with numerous top-tier academic publications.</li>
+<li><strong>Product Manager:</strong> Wang Wu - Responsible for product design and user experience optimization.</li>
 </ul>
 </div>
-<div class="position-item">
-<h5>高级AI工程师</h5>
-<p class="salary">薪资：40-80W/年</p>
-<ul class="requirements">
-<li>3年以上相关开发经验</li>
-<li>精通Python/C++</li>
-<li>有大规模分布式系统经验</li>
+<div class="info-section">
+<h3>Our Technology</h3>
+<p>We employ the most advanced deep learning models, combined with large-scale data training, to achieve the following technological breakthroughs:</p>
+<ul>
+<li>Multilingual Support: Real-time translation and understanding in over 40 languages.</li>
+<li>Context Understanding: Ability to understand the context of conversations, providing more natural interactions.</li>
+<li>Sentiment Analysis: Recognizes the user's emotional state, offering more human-like responses.</li>
+<li>Knowledge Graph: Integrates a wide range of knowledge bases, enhancing AI's knowledge comprehension capabilities.</li>
 </ul>
 </div>
-<div class="position-item">
-<h5>产品经理</h5>
-<p class="salary">薪资：30-60W/年</p>
-<ul class="requirements">
-<li>5年以上AI产品经验</li>
-<li>优秀的产品思维</li>
-<li>出色的沟通能力</li>
+<div class="info-section">
+<h3>Partners</h3>
+<p>We have established partnerships with several well-known companies and institutions, including:</p>
+<ul>
+<li>Microsoft - Providing cloud computing and AI technology support.</li>
+<li>Google - Collaborating on the development of AI applications and services.</li>
+<li>Tsinghua University - Jointly researching cutting-edge AI technology.</li>
+</ul>
+</div>
+<div class="info-section">
+<h3>Contact Us</h3>
+<p>If you are interested in our products or services, or have any questions, please feel free to contact us:</p>
+<ul>
+<li>Email: <a href="mailto:info@tifaai.com">info@tifaai.com</a></li>
+<li>Phone: +86 123-4567-8900</li>
+<li>Address: No. 1 Zhongguancun Street, Haidian District, Beijing</li>
 </ul>
 </div>
 </div>
-<div class="benefits">
-<h5>员工福利</h5>
-<ul class="benefits-list">
-<li>六险一金，补充商业保险</li>
-<li>年终奖金，期权激励</li>
-<li>弹性工作制，不打卡</li>
-<li>免费三餐，下午茶</li>
-<li>定期团建，节日礼品</li>
-<li>带薪年假，学习培训</li>
-</ul>
-</div>
-<div class="apply-info">
-<p>简历投递邮箱：<a href="mailto:LEFTNORTH@qq.com">LEFTNORTH@qq.com</a></p>
-<p class="note">邮件主题请注明：应聘岗位+姓名</p>
-</div>
-</div>
-</div>
-</section>
+<!-- Footer -->
 <div class="promotion-section footer-section">
 <div class="promotion-left">
 <div class="footer-info">
-<p>© 2024 AI Chat Company. 保留所有权利</p>
-<p>联系邮箱：contact@example.com</p>
+<p>© 2024 AI Chat Company. All rights reserved</p>
+<p>Contact Email: contact@example.com</p>
 <div class="footer-links">
-<a href="/privacy">隐私政策</a>
-<a href="/terms">服务条款</a>
-<a href="/about">关于我们</a>
+<a href="/privacy">Privacy Policy</a>
+<a href="/terms">Terms of Service</a>
+<a href="/about">About Us</a>
 </div>
 </div>
 </div>
