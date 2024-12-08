@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 
-<html lang="zh-CN">
+<html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>TIFA AI - 在线试用</title>
+<title>TIFA AI - Online Trial</title>
 <link href="css\try.css" rel="stylesheet"/>
 <link href="css\dev.css" rel="stylesheet"/>
 <script src="..\..\unpkg.com\vue@3\dist\vue.global.js"></script>
@@ -12,7 +12,7 @@
 <link href="..\..\cdnjs.cloudflare.com\ajax\libs\prism\1.24.1\themes\prism-tomorrow.min.css" rel="stylesheet"/>
 </head>
 <body>
-<!-- 导航栏 - 修改后的结构 -->
+<!-- Navigation Bar - Modified Structure -->
 <nav class="navbar">
 <div class="left-section">
 <img alt="Logo" class="logo" src="img\logo.png"/>
@@ -20,10 +20,10 @@
 <div class="right-section-main">
 <div class="right-section">
     <div class="nav-links" style="padding: 1rem 0;">
-        <a class="nav-link" href="index.html">◇主页</a>
-        <a class="nav-link" href="Dev.html">◇开发文档</a>
-        <a class="nav-link" href="info.html">◇关于我们</a>
-        <a class="nav-link" href="open.html">◇共享</a>
+        <a class="nav-link" href="index.html">◇Home</a>
+        <a class="nav-link" href="Dev.html">◇Developer Documentation</a>
+        <a class="nav-link" href="info.html">◇About Us</a>
+        <a class="nav-link" href="open.html">◇Share</a>
         </div>
 </div>
 </div>
@@ -32,135 +32,135 @@
 <div class="performance-content">
 <div class="doc-section" style="flex: 2">
 <div class="performance-header">
-<h2>开发文档</h2>
-<p>快速接入，轻松开发</p>
+<h2>Developer Documentation</h2>
+<p>Quick Integration, Easy Development</p>
 </div>
-<div class="api-docs"> <!-- 主要内容区域 -->
-<!-- 主要内容区域 -->
+<div class="api-docs"> <!-- Main Content Area -->
+<!-- Main Content Area -->
 <div class="doc-container">
-<!-- 左侧导航 -->
+<!-- Left Navigation -->
 <aside class="doc-sidebar">
 <div class="sidebar-section">
-<h3>快速开始</h3>
+<h3>Quick Start</h3>
 <ul>
-<li><a href="#introduction">介绍</a></li>
-<li><a href="#authentication">认证方式</a></li>
-<li><a href="#api-reference">API 参考</a></li>
-<li><a href="#rate-limits">使用限制</a></li>
-<li><a href="#best-practices">最佳实践</a></li>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#authentication">Authentication</a></li>
+<li><a href="#api-reference">API Reference</a></li>
+<li><a href="#rate-limits">Rate Limits</a></li>
+<li><a href="#best-practices">Best Practices</a></li>
 </ul>
 </div>
 <div class="sidebar-section">
-<h3>API 详解</h3>
+<h3>API Details</h3>
 <ul>
-<li><a href="#chat-api">对话接口</a></li>
-<li><a href="#params">参数说明</a></li>
-<li><a href="#examples">示例代码</a></li>
-<li><a href="#error-handling">错误处理</a></li>
-<li><a href="#advanced">高级功能</a></li>
+<li><a href="#chat-api">Chat API</a></li>
+<li><a href="#params">Parameter Explanation</a></li>
+<li><a href="#examples">Example Code</a></li>
+<li><a href="#error-handling">Error Handling</a></li>
+<li><a href="#advanced">Advanced Features</a></li>
 </ul>
 </div>
 </aside>
-<!-- 主要文档内容 -->
+<!-- Main Documentation Content -->
 <main class="doc-content">
 <section class="doc-section" id="introduction">
-<h2>开发文档</h2>
-<p class="doc-intro">欢迎使用TIFA AI API。本文档将指导您如何接入和使用我们的服务。TIFA AI提供强大的自然语言处理能力，支持多种场景应用。</p>
+<h2>Developer Documentation</h2>
+<p class="doc-intro">Welcome to the TIFA AI API. This documentation will guide you on how to integrate and use our services. TIFA AI provides powerful natural language processing capabilities, supporting various application scenarios.</p>
 <div class="version-info">
-<span class="version">当前版本：v1.0</span>
-<span class="update-date">最后更新：2024-03-20</span>
+<span class="version">Current Version: v1.0</span>
+<span class="update-date">Last Updated: 2024-03-20</span>
 </div>
 <div class="feature-list">
-<h4>主要特性</h4>
+<h4>Main Features</h4>
 <ul>
-<li>✨ 支持流式输出，实时响应</li>
-<li>✨ 超长上下文支持，最大支持100K tokens</li>
-<li>✨ 多语言支持，支持中英日韩等40+种语言</li>
-<li>✨ 99.9%的服务可用性保证</li>
+<li>✨ Supports streaming output, real-time response</li>
+<li>✨ Long context support, up to 100K tokens</li>
+<li>✨ Multi-language support, including Chinese, English, Japanese, Korean, and 40+ other languages</li>
+<li>✨ 99.9% service availability guarantee</li>
 </ul>
 </div>
 </section>
 <section class="doc-section" id="authentication">
-<h3>认证方式</h3>
+<h3>Authentication</h3>
 <div class="info-box">
-<p>所有API请求都需要使用API密钥进行认证。您可以在控制台获取API密钥。</p>
+<p>All API requests require authentication using an API key. You can obtain your API key from the console.</p>
 <div class="warning">
 
-                    ⚠️ 请妥善保管您的API密钥，不要在客户端代码中明文存储。
+                    ⚠️ Please keep your API key secure, do not store it in plain text in client-side code.
 
                 </div>
 
 <div class="warning">
 
-                    ℹ️ Leftnorth国际业务官方指定由Swarmeta-ai.me负责，请放心使用。
+                    ℹ️ Leftnorth's international business is officially designated to be handled by Swarmeta-ai.me, please use with confidence.
 
 </div>
 <div class="auth-notes">
-<h4>注意事项：</h4>
+<h4>Notes:</h4>
 <ul>
-<li>API密钥具有完整的账户权限，请勿泄露</li>
-<li>建议使用环境变量或配置文件存储API密钥</li>
-<li>定期轮换API密钥以提升安全性</li>
-<li>可以为不同应用创建不同的API密钥</li>
+<li>API keys have full account permissions, do not disclose them</li>
+<li>It is recommended to store API keys in environment variables or configuration files</li>
+<li>Regularly rotate API keys to enhance security</li>
+<li>You can create different API keys for different applications</li>
 </ul>
 </div>
 </div>
 </section>
 <section class="doc-section" id="rate-limits">
-<h3>使用限制</h3>
+<h3>Rate Limits</h3>
 <div class="limits-box">
-<p>为了保证服务质量，API访问有以下限制：</p>
+<p>To ensure service quality, API access has the following limits:</p>
 <ul>
-<li>每个API密钥每分钟最多60次请求</li>
-<li>单次请求最大输入4000 tokens</li>
-<li>每月总使用量根据套餐不同有所限制</li>
+<li>Each API key can make up to 60 requests per minute</li>
+<li>Maximum input of 4000 tokens per request</li>
+<li>Monthly usage limits vary based on the plan</li>
 </ul>
 <div class="note">
-<p>💡 如需更高配额，请联系商务团队升级套餐</p>
+<p>💡 For higher quotas, please contact the business team to upgrade your plan</p>
 </div>
 </div>
 </section>
 <section class="doc-section" id="best-practices">
-<h3>最佳实践</h3>
+<h3>Best Practices</h3>
 <div class="best-practices-box">
 <div class="practice-item">
-<h4>1. 错误处理</h4>
+<h4>1. Error Handling</h4>
 <ul>
-<li>实现完善的错误处理机制</li>
-<li>对网络错误进行重试</li>
-<li>设置合理的超时时间</li>
-<li>记录详细的错误日志</li>
+<li>Implement comprehensive error handling mechanisms</li>
+<li>Retry network errors</li>
+<li>Set reasonable timeout periods</li>
+<li>Log detailed error logs</li>
 </ul>
 </div>
 <div class="practice-item">
-<h4>2. 性能优化</h4>
+<h4>2. Performance Optimization</h4>
 <ul>
-<li>使用连接池复用连接</li>
-<li>启用gzip压缩</li>
-<li>实现请求缓存</li>
-<li>采用异步处理方式</li>
+<li>Use connection pooling to reuse connections</li>
+<li>Enable gzip compression</li>
+<li>Implement request caching</li>
+<li>Adopt asynchronous processing methods</li>
 </ul>
 </div>
 <div class="practice-item">
-<h4>3. 安全建议</h4>
+<h4>3. Security Recommendations</h4>
 <ul>
-<li>使用环境变量存储密钥</li>
-<li>启用HTTPS传输</li>
-<li>实现请求签名机制</li>
-<li>定期更新API密钥</li>
+<li>Store keys in environment variables</li>
+<li>Enable HTTPS transmission</li>
+<li>Implement request signing mechanisms</li>
+<li>Regularly update API keys</li>
 </ul>
 </div>
 <div class="practice-item">
-<h4>4. 开发建议</h4>
+<h4>4. Development Recommendations</h4>
 <ul>
-<li>使用SDK而非直接调用API</li>
-<li>做好开发环境与生产环境隔离</li>
-<li>合理设置模型参数</li>
-<li>实现优雅的降级机制</li>
+<li>Use SDKs instead of directly calling the API</li>
+<li>Isolate development and production environments</li>
+<li>Set model parameters appropriately</li>
+<li>Implement graceful degradation mechanisms</li>
 </ul>
 </div>
 <div class="note">
-<p>💡 这些最佳实践将帮助您构建更稳定可靠的应用</p>
+<p>💡 These best practices will help you build more stable and reliable applications</p>
 </div>
 </div>
 </section>
@@ -168,20 +168,20 @@
 <h3>API Endpoint</h3>
 <div class="endpoint-box">
 <pre><code class="language-bash">POST http://visionsic.com:8001/v1/chat/completions</code></pre>
-<button class="copy-btn" data-clipboard-text="http://visionsic.com:8001/v1/chat/completions">复制</button>
+<button class="copy-btn" data-clipboard-text="http://visionsic.com:8001/v1/chat/completions">Copy</button>
 </div>
 <div class="endpoint-notes">
-<h4>请求说明：</h4>
+<h4>Request Notes:</h4>
 <ul>
-<li>仅支持HTTPS协议</li>
-<li>请求体必须是JSON格式</li>
-<li>响应编码为UTF-8</li>
-<li>支持跨域请求(CORS)</li>
+<li>Only supports HTTPS protocol</li>
+<li>Request body must be in JSON format</li>
+<li>Response encoding is UTF-8</li>
+<li>Supports cross-origin requests (CORS)</li>
 </ul>
 </div>
 </section>
 <section class="doc-section" id="examples">
-<h3>示例代码</h3>
+<h3>Example Code</h3>
 <div class="code-tabs">
 <div class="tab-header">
 <button class="tab-btn active" data-lang="python">Python</button>
@@ -214,9 +214,9 @@ data = {
 
 "messages": [
 
-    {"role": "system", "content": "你是一个助手"},
+    {"role": "system", "content": "You are an assistant"},
 
-    {"role": "user", "content": "你好"}
+    {"role": "user", "content": "Hello"}
 
 ],
 
@@ -228,13 +228,13 @@ data = {
 
 
 
-# 错误处理
+# Error Handling
 
 try:
 
     response = requests.post(url, headers=headers, json=data)
 
-    response.raise_for_status()  # 检查HTTP错误
+    response.raise_for_status()  # Check for HTTP errors
 
     for line in response.iter_lines():
 
@@ -244,11 +244,11 @@ try:
 
 except requests.exceptions.RequestException as e:
 
-    print(f"API请求错误: {e}")
+    print(f"API request error: {e}")
 
 except json.JSONDecodeError as e:
 
-    print(f"JSON解析错误: {e}")
+    print(f"JSON parsing error: {e}")
 
                         </code></pre>
 </div>
@@ -271,9 +271,9 @@ model: '/home/fangxin/claude',
 
 messages: [
 
-    {role: 'system', content: '你是一个助手'},
+    {role: 'system', content: 'You are an assistant'},
 
-    {role: 'user', content: '你好'}
+    {role: 'user', content: 'Hello'}
 
 ],
 
@@ -285,7 +285,7 @@ stream: true
 
 
 
-// 使用async/await和错误处理
+// Using async/await and error handling
 
 async function chatWithAI() {
 
@@ -317,7 +317,7 @@ async function chatWithAI() {
 
     } catch (error) {
 
-        console.error('请求错误:', error);
+        console.error('Request error:', error);
 
     }
 
@@ -332,7 +332,7 @@ chatWithAI();
 <div class="tab-pane" id="curl-code">
 <pre><code class="language-bash">
 
-# 基本请求
+# Basic Request
 
 curl -X POST http://visionsic.com:8001/v1/chat/completions \
 
@@ -346,9 +346,9 @@ curl -X POST http://visionsic.com:8001/v1/chat/completions \
 
     "messages": [
 
-        {"role": "system", "content": "你是一个助手"},
+        {"role": "system", "content": "You are an assistant"},
 
-        {"role": "user", "content": "你好"}
+        {"role": "user", "content": "Hello"}
 
     ],
 
@@ -360,7 +360,7 @@ curl -X POST http://visionsic.com:8001/v1/chat/completions \
 
 
 
-# 带超时设置的请求
+# Request with Timeout Settings
 
 curl -X POST http://visionsic.com:8001/v1/chat/completions \
 
@@ -379,68 +379,68 @@ curl -X POST http://visionsic.com:8001/v1/chat/completions \
 </div>
 </div>
 <div class="code-notes">
-<h4>代码说明：</h4>
+<h4>Code Notes:</h4>
 <ul>
-<li>示例中包含了基本的错误处理</li>
-<li>建议在生产环境中添加重试机制</li>
-<li>可以根据需要调整超时设置</li>
-<li>stream模式下建议使用异步处理</li>
+<li>The example includes basic error handling</li>
+<li>It is recommended to add retry mechanisms in production environments</li>
+<li>Adjust timeout settings as needed</li>
+<li>Use asynchronous processing for stream mode</li>
 </ul>
 </div>
 </section>
 <section class="doc-section" id="chat-api">
-<h3>对话接口</h3>
+<h3>Chat API</h3>
 <div class="endpoint-info">
-<p><strong>接口地址:</strong> http://visionsic.com:8001/v1/chat/completions</p>
-<p><strong>请求方式:</strong> POST</p>
+<p><strong>Endpoint:</strong> http://visionsic.com:8001/v1/chat/completions</p>
+<p><strong>Method:</strong> POST</p>
 <p><strong>Content-Type:</strong> application/json</p>
 </div>
 <div class="api-description">
-<p>对话接口支持单轮和多轮对话,可以通过调整不同参数来控制AI的行为表现。支持流式输出和普通输出两种模式。</p>
+<p>The chat API supports single and multi-turn conversations, allowing control over AI behavior through various parameters. It supports both streaming and regular output modes.</p>
 </div>
 </section>
 <section class="doc-section" id="params">
-<h3>参数说明</h3>
+<h3>Parameter Explanation</h3>
 <table class="params-table">
 <tr>
-<th>参数名</th>
-<th>类型</th>
-<th>必选</th>
-<th>说明</th>
+<th>Parameter Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
 </tr>
 <tr>
 <td>model</td>
 <td>string</td>
-<td>是</td>
-<td>模型路径,例如"/home/fangxin/claude"</td>
+<td>Yes</td>
+<td>Model path, e.g., "/home/fangxin/claude"</td>
 </tr>
 <tr>
 <td>messages</td>
 <td>array</td>
-<td>是</td>
-<td>对话历史,包含role和content字段</td>
+<td>Yes</td>
+<td>Conversation history, containing role and content fields</td>
 </tr>
 <tr>
 <td>temperature</td>
 <td>number</td>
-<td>否</td>
-<td>温度参数,控制随机性,范围0-1,默认0.7</td>
+<td>No</td>
+<td>Temperature parameter, controls randomness, range 0-1, default 0.7</td>
 </tr>
 <tr>
 <td>stream</td>
 <td>boolean</td>
-<td>否</td>
-<td>是否启用流式输出,默认false</td>
+<td>No</td>
+<td>Whether to enable streaming output, default false</td>
 </tr>
 <tr>
 <td>max_tokens</td>
 <td>integer</td>
-<td>否</td>
-<td>生成文本的最大长度,默认2048</td>
+<td>No</td>
+<td>Maximum length of generated text, default 2048</td>
 </tr>
 </table>
 <div class="response-format">
-<h4>返回格式:</h4>
+<h4>Response Format:</h4>
 <pre><code class="language-json">
 
 {
@@ -459,7 +459,7 @@ curl -X POST http://visionsic.com:8001/v1/chat/completions \
 
             "role": "assistant",
 
-            "content": "AI的回复内容"
+            "content": "AI's response content"
 
         },
 
@@ -475,43 +475,43 @@ curl -X POST http://visionsic.com:8001/v1/chat/completions \
 </div>
 </section>
 <section class="doc-section" id="error-handling">
-<h3>错误处理</h3>
+<h3>Error Handling</h3>
 <div class="error-codes">
-<h4>常见错误码：</h4>
+<h4>Common Error Codes:</h4>
 <table class="error-table">
 <tr>
-<th>错误码</th>
-<th>说明</th>
-<th>处理建议</th>
+<th>Error Code</th>
+<th>Description</th>
+<th>Handling Suggestion</th>
 </tr>
 <tr>
 <td>401</td>
-<td>未授权</td>
-<td>检查API密钥是否正确</td>
+<td>Unauthorized</td>
+<td>Check if the API key is correct</td>
 </tr>
 <tr>
 <td>429</td>
-<td>请求过于频繁</td>
-<td>实现请求限流</td>
+<td>Too Many Requests</td>
+<td>Implement request rate limiting</td>
 </tr>
 <tr>
 <td>500</td>
-<td>服务器错误</td>
-<td>稍后重试或联系支持</td>
+<td>Server Error</td>
+<td>Retry later or contact support</td>
 </tr>
 </table>
 </div>
 </section>
 <section class="doc-section" id="advanced">
-<h3>高级功能</h3>
+<h3>Advanced Features</h3>
 <div class="advanced-features">
 <div class="feature-card">
-<h4>1. 流式输出</h4>
-<p>支持实时流式返回AI响应,提供更好的交互体验。</p>
+<h4>1. Streaming Output</h4>
+<p>Supports real-time streaming of AI responses, providing a better interactive experience.</p>
 <div class="code-example">
 <pre><code class="language-javascript">
 
-// 启用流式输出
+// Enable streaming output
 
 const response = await fetch(url, {
 
@@ -541,8 +541,8 @@ while(true) {
 </div>
 </div>
 <div class="feature-card">
-<h4>2. 函数调用</h4>
-<p>支持自定义函数能力,扩展AI助手的功能范围。</p>
+<h4>2. Function Calling</h4>
+<p>Supports custom function capabilities, expanding the functionality of the AI assistant.</p>
 <div class="code-example">
 <pre><code class="language-javascript">
 
@@ -550,7 +550,7 @@ const functions = [{
 
     "name": "get_weather",
 
-    "description": "获取天气信息",
+    "description": "Get weather information",
 
     "parameters": {
 
@@ -562,7 +562,7 @@ const functions = [{
 
                 "type": "string",
 
-                "description": "城市名称"
+                "description": "City name"
 
             }
 
@@ -596,20 +596,20 @@ const response = await fetch(url, {
 </div>
 </div>
 <div class="feature-card">
-<h4>3. 上下文记忆</h4>
-<p>支持多轮对话记忆,实现连贯的对话体验。</p>
+<h4>3. Context Memory</h4>
+<p>Supports multi-turn conversation memory, achieving a coherent conversation experience.</p>
 <div class="code-example">
 <pre><code class="language-javascript">
 
 const messages = [
 
-    {"role": "system", "content": "你是一个助手"},
+    {"role": "system", "content": "You are an assistant"},
 
-    {"role": "user", "content": "今天天气怎么样?"},
+    {"role": "user", "content": "How's the weather today?"},
 
-    {"role": "assistant", "content": "北京今天晴朗"},
+    {"role": "assistant", "content": "It's sunny in Beijing today"},
 
-    {"role": "user", "content": "温度呢?"} // 延续上下文
+    {"role": "user", "content": "What about the temperature?"} // Continuing the context
 
 ];
 
@@ -617,21 +617,21 @@ const messages = [
 </div>
 </div>
 <div class="feature-card">
-<h4>4. 模型参数调优</h4>
-<p>提供丰富的参数配置,实现个性化的输出控制。</p>
+<h4>4. Model Parameter Tuning</h4>
+<p>Provides rich parameter configurations for personalized output control.</p>
 <div class="parameter-list">
 <ul>
-<li><strong>temperature</strong>: 控制输出随机性 (0-1)</li>
-<li><strong>top_p</strong>: 控制输出多样性</li>
-<li><strong>max_tokens</strong>: 控制输出长度</li>
-<li><strong>presence_penalty</strong>: 控制话题新鲜度</li>
+<li><strong>temperature</strong>: Controls output randomness (0-1)</li>
+<li><strong>top_p</strong>: Controls output diversity</li>
+<li><strong>max_tokens</strong>: Controls output length</li>
+<li><strong>presence_penalty</strong>: Controls topic freshness</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="advanced-notes">
 <div class="note">
-<p>💡 高级功能可能需要更高级别的API权限,请联系客服升级</p>
+<p>💡 Advanced features may require higher API permissions, please contact customer service to upgrade</p>
 </div>
 </div>
 </section>
@@ -640,27 +640,27 @@ const messages = [
 </div>
 </div>
 </div>
-<!-- 页脚 -->
+<!-- Footer -->
 <div class="promotion-section footer-section">
 <div class="promotion-left">
 <div class="footer-info">
-<p>© 2024 AI Chat Company. 保留所有权利</p>
-<p>ICP备案号：京ICP备XXXXXXXX号-1</p>
-<p>联系邮箱：contact@example.com</p>
+<p>© 2024 AI Chat Company. All rights reserved</p>
+<p>ICP Registration Number: 京ICP备XXXXXXXX号-1</p>
+<p>Contact Email: contact@example.com</p>
 <div class="footer-links">
-<a href="/privacy">隐私政策</a>
-<a href="/terms">服务条款</a>
-<a href="/about">关于我们</a>
+<a href="/privacy">Privacy Policy</a>
+<a href="/terms">Terms of Service</a>
+<a href="/about">About Us</a>
 </div>
 </div>
 </div>
 </div>
-<!-- 添加必要的脚本 -->
+<!-- Add necessary scripts -->
 <script src="..\..\cdnjs.cloudflare.com\ajax\libs\prism\1.24.1\prism.min.js"></script>
 <script src="..\..\cdnjs.cloudflare.com\ajax\libs\clipboard.js\2.0.8\clipboard.min.js"></script>
 <script>
 
-        // 语言切换功能
+        // Language Switching Functionality
 
         document.addEventListener('DOMContentLoaded', function() {
 
@@ -674,7 +674,7 @@ const messages = [
 
                 btn.addEventListener('click', function() {
 
-                    // 移除所有活动状态
+                    // Remove all active states
 
                     tabBtns.forEach(b => b.classList.remove('active'));
 
@@ -682,7 +682,7 @@ const messages = [
 
 
 
-                    // 添加新的活动状态
+                    // Add new active state
 
                     this.classList.add('active');
 
@@ -696,7 +696,7 @@ const messages = [
 
 
 
-            // 初始化代码复制功能
+            // Initialize code copy functionality
 
             new ClipboardJS('.copy-btn');
 
