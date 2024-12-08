@@ -708,7 +708,7 @@ const messages = [
 <script>
 translate.language.setLocal('english'); // Set the local language (the language of the current webpage). If not set, it will automatically detect the language of the text displayed on the current webpage. You can specify languages like 'english', 'chinese_simplified', etc. See the documentation below for more details.
 translate.service.use('client.edge'); // Set the machine translation service channel to use the client itself, not relying on the server. For related instructions, refer to http://translate.zvo.cn/43086.html
-translate.language.setDefaultTo(navigator.language || navigator.userLanguage)
+translate.setAutoDiscriminateLocalLanguage();
 translate.execute();// Perform translation 
 </script>
 </html>
