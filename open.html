@@ -11,11 +11,7 @@
 <script src="..\..\unpkg.com\axios\dist\axios.min.js"></script>
 <link href="..\..\cdnjs.cloudflare.com\ajax\libs\prism\1.24.1\themes\prism-tomorrow.min.css" rel="stylesheet"/>
 <script src="https://cdn.staticfile.net/translate.js/3.10.0/translate.js"></script>
-<script>
-translate.language.setLocal('chinese_simplified'); //设置本地语种（当前网页的语种）。如果不设置，默认自动识别当前网页显示文字的语种。 可填写如 'english'、'chinese_simplified' 等，具体参见文档下方关于此的说明。
-translate.service.use('client.edge'); //设置机器翻译服务通道，直接客户端本身，不依赖服务端 。相关说明参考 http://translate.zvo.cn/43086.html
-translate.execute();//进行翻译 
-</script>
+
 </head>
 <body>
 <!-- 导航栏 - 修改后的结构 -->
@@ -348,4 +344,10 @@ translate.execute();//进行翻译
 </div>
 </div>
 </body>
+<script src="https://cdn.staticfile.net/translate.js/3.10.0/translate.js"></script>
+<script>
+translate.language.setLocal('english'); // Set the local language (the language of the current webpage). If not set, it will automatically detect the language of the text displayed on the current webpage. You can specify languages like 'english', 'chinese_simplified', etc. See the documentation below for more details.
+translate.service.use('client.edge'); // Set the machine translation service channel to use the client itself, not relying on the server. For related instructions, refer to http://translate.zvo.cn/43086.html
+translate.execute();// Perform translation 
+</script>
 </html>
